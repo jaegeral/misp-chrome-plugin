@@ -1,18 +1,12 @@
-
-
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "name": "MISP Chrome Plugin",
   "description": "This plugin will provide several actions to interact from the Browser with MISP",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "images/stick-man1.gif",
-    "popup":"popup.html"
+  "background": {
+    "page": "background.html"
   },
-
-  "background_page": "background.html",
 
   "content_scripts": [
     {
