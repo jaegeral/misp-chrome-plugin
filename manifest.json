@@ -14,11 +14,16 @@
       "js": ["js/misp_interaction.js"]
     }
   ],
+  "content_security_policy": "script-src 'self' 'sha256-eOXxHef7sMpbp6VOlUR8y3OUxast5fh140fzL9IybyY=' 'sha256-kZuCp/4JZXLiTX6WFDm0LO1omK5zoaaVPqnAgVxHV2k=' 'sha256-H7GK7GMyc5KbFNXOPKQXIFtvXq0vss4OVoDO3qwIHPg=' 'sha256-2UUDFMXqyRQdhR8LZ2UHpP1hhsCiRRaWPxX/dflwC8k='; object-src 'self'",
+
+  "minimum_chrome_version": "46",
 
   "permissions": [
     "http://*/*",
     "https://*/*",
     "contextMenus",
-    "tabs"
+    "tabs",
+    "background"
+
   ]
 }

@@ -1,4 +1,5 @@
 <script>
+
 var seltext = null;
 
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse)
@@ -15,11 +16,11 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse)
     }
 });
 
-
 function savetext(info,tab)
 {
     var jax = new XMLHttpRequest();
-    jax.open("POST","http://localhost/text/");
+    jax.open("POST","http://mispbeta.circl.lu/events/restSearch/download/8.8.8.8");
+    jax.setRequestHeader("Authorization","M6kMZOD1BQgN6juAQkJbhmESvohvazeAjZIVzttM")
     jax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     jax.send("text="+seltext);
     jax.onreadystatechange = function() { if(jax.readyState==4) { alert(jax.responseText);  }}
